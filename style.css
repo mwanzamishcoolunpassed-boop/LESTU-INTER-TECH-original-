@@ -1,0 +1,1499 @@
+body {  
+    background: url("lest.jpg"); 
+}
+
+h1 {  
+    color: gold;  
+    box-shadow: 0 0 100px gold;  
+    border: 3px solid blue;  
+}
+
+h2 {  
+    color: white;  
+    box-shadow: 0 0 100px gold;  
+}
+
+#name {  
+    height: 250px;  
+    width: 100%;  
+    border: 3px solid gold;  
+    background-image: url("Eve.jpg");  
+    background-position: center;  
+    background-size: cover;  
+    background-repeat: no-repeat;  
+
+    display: flex;  
+    justify-content: center;  
+    align-items: center;  
+}
+
+.members {  
+    display: grid;  
+    height: 200px;  
+    border: 4px solid grey;  
+    background-position: center;  
+    align-items: center;  
+    text-align: center;  
+    gap: 4px;  
+}
+
+#go {  
+    color: white;  
+    height: 80px;  
+    width: 150px;  
+    border: 3px solid blueviolet;  
+    box-shadow: 0 0 100px gold;  
+    background-color: black;  
+}
+
+.lec {  
+    height: 50px;  
+    width: 310px;  
+    text-align: center;  
+    position: relative;  
+    border: 3px solid gold;  
+    font-size: 2em;  
+    background: transparent;  
+    color: white;  
+    box-shadow: 0 0 10px gold;  
+}
+
+.buttons {  
+    gap: 50px;  
+    display: grid;  
+    justify-content: center;  
+    margin-top: 100px;  
+}
+
+.reg {  
+    width: 280px;  
+    height: 100px;  
+    background-color: blue;  
+    color: white;  
+    border: 2px solid white;  
+    border-radius: 10px;  
+    box-shadow: 0 0 12px gold;  
+    font-size: 18px;  
+    font-weight: bold;  
+    cursor: pointer;  
+    transition: 0.3s;  
+}
+
+.reg:hover {  
+    background-color: darkblue;  
+    transform: scale(1.05);  
+}
+
+#note {  
+    text-align: center;  
+    color: white;  
+    font-size: 20px;  
+    margin-bottom: 20px;  
+}
+
+#buttons {  
+    text-align: center;  
+}
+#signup {
+    width: 320px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #1b1b1b;
+    border: 2px solid gold;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.5);
+
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+#signup input,
+#signup select {
+    width: 100%;
+    height: 45px;
+    padding: 0 12px;
+    font-size: 16px;
+    color: white;
+    background: #2b2b2b;
+    border: 2px solid #555;
+    border-radius: 6px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+#signup input::placeholder {
+    color: #bbb;
+}
+
+#signup input:focus,
+#signup select:focus {
+    border-color: gold;
+    box-shadow: 0 0 8px gold;
+}
+
+.course-selection {
+    width: 100%;
+}
+
+#signup select {
+    cursor: pointer;
+}
+
+#submit {
+    display: block;
+    width: 200px;
+    height: 45px;
+    margin: 20px auto 0;
+    background: black;
+    color: white;
+    border: 2px solid gold;
+    border-radius: 6px;
+    box-shadow: 0 0 12px gold;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+#submit:hover {
+    background: #222;
+    box-shadow: 0 0 18px gold;
+}
+
+#submit:active {
+    transform: scale(0.97);
+}
+
+.grid {
+    display: grid;
+    grid-template-rows: 3;
+    gap: 30px;
+}
+
+.lectures {
+    width: 100%;
+    height: 120px;
+
+    background-color: #6ec6ff;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 22px;
+    font-weight: bold;
+
+    border-radius: 10px;
+    box-shadow: 0 0 12px yellow;
+
+    cursor: pointer;
+}
+
+#loggin {
+    width: 300px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+#loggin input {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #999;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#loggin button {
+    width: 95%;
+    padding: 10px;
+    background: #0056b3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#loggin button:hover {
+    background: #003d80;
+}
+
+#enter {
+    width: 220px;
+    height: 45px;
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    display: block;
+    margin: 20px auto;
+    transition: 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#enter:hover {
+    background-color: #003d80;
+    transform: translateY(-2px);
+}
+
+#enter:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+#bred{
+    width: 80px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    text-align: center;
+    font-size: 2em;
+}
+
+.announcementBox{
+    width:100%;
+    padding:15px;
+    border-radius:15px;
+    background:#ffffff;
+    text-align:center;
+}
+
+/* Student Portal Panel */
+.access-panel{
+    width:90%;
+    max-width:380px;
+    margin:70px auto;
+    padding:25px;
+    background:linear-gradient(135deg,#87CEFA,#5DADE2);
+    border:2px solid #ffffff;
+    border-radius:18px;
+    text-align:center;
+    box-shadow:
+        0 0 15px gold,
+        0 10px 25px rgba(0,0,0,.25);
+}
+
+/* Heading */
+#portalTitle{
+    color:#fff;
+    font-size:24px;
+    font-weight:bold;
+    margin-bottom:20px;
+    text-shadow:1px 1px 4px rgba(0,0,0,.4);
+}
+
+/* Buttons */
+.portal-btn{
+    width:100%;
+    height:50px;
+    margin:12px 0;
+    background:linear-gradient(135deg,#1565C0,#42A5F5);
+    color:white;
+    border:2px solid #fff;
+    border-radius:12px;
+    font-size:17px;
+    font-weight:bold;
+    letter-spacing:1px;
+    cursor:pointer;
+    transition:all .3s ease;
+    box-shadow:
+        0 0 10px gold,
+        0 5px 12px rgba(0,0,0,.25);
+}
+
+.portal-btn:hover{
+    transform:translateY(-3px);
+    background:linear-gradient(135deg,#0D47A1,#1E88E5);
+    box-shadow:
+        0 0 18px gold,
+        0 8px 18px rgba(0,0,0,.35);
+}
+
+.portal-btn:active{
+    transform:scale(.97);
+}
+
+#signInSection,
+#signUpSection{
+    width:90%;
+    max-width:420px;
+    margin:30px auto;
+    padding:25px;
+    background:#F5FCFF;
+    border:2px solid #ffffff;
+    border-radius:18px;
+    box-shadow:
+        0 0 15px gold,
+        0 8px 20px rgba(0,0,0,.2);
+}
+
+#sup{
+    width:92%;
+    max-width:430px;
+    margin:30px auto;
+    padding:25px;
+    background:linear-gradient(135deg,#8fd3ff,#4ea8de);
+    border:2px solid #fff;
+    border-radius:18px;
+    box-shadow:
+        0 0 18px gold,
+        0 10px 25px rgba(0,0,0,.25);
+}
+
+#sup input{
+    width:100%;
+    height:48px;
+    margin:10px 0;
+    padding:0 15px;
+    box-sizing:border-box;
+    border:2px solid #fff;
+    border-radius:10px;
+    background:rgba(255,255,255,.95);
+    font-size:15px;
+    outline:none;
+    transition:.3s;
+}
+
+#sup input:focus{
+    border-color:gold;
+    box-shadow:0 0 10px gold;
+}
+
+.cs{
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+    margin:18px 0;
+}
+
+.cs select{
+    width:100%;
+    height:48px;
+    padding:0 12px;
+    border:2px solid #fff;
+    border-radius:10px;
+    background:white;
+    font-size:15px;
+    outline:none;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.cs select:focus{
+    border-color:gold;
+    box-shadow:0 0 10px gold;
+}
+
+#sb{
+    width:100%;
+    height:50px;
+    margin-top:15px;
+    border:2px solid #fff;
+    border-radius:12px;
+    background:linear-gradient(135deg,#1565c0,#42a5f5);
+    color:white;
+    font-size:17px;
+    font-weight:bold;
+    letter-spacing:1px;
+    cursor:pointer;
+    box-shadow:
+        0 0 12px gold,
+        0 5px 12px rgba(0,0,0,.25);
+    transition:all .3s ease;
+}
+
+#sb:hover{
+    background:linear-gradient(135deg,#0d47a1,#1e88e5);
+    transform:translateY(-2px);
+    box-shadow:
+        0 0 18px gold,
+        0 8px 18px rgba(0,0,0,.3);
+}
+
+#sb:active{
+    transform:scale(.97);
+}
+
+::placeholder{
+    color:#666;
+    font-weight:500;
+}
+#stuName{
+    width:90%;
+    max-width:500px;
+    margin:20px auto;
+    padding:20px;
+    background:#6ec6ff;
+    border:2px solid white;
+    border-radius:15px;
+    box-shadow:0 0 18px gold;
+    color:white;
+    font-family:Arial, sans-serif;
+}
+
+#stN{
+    text-align:center;
+    margin-bottom:15px;
+    font-size:28px;
+    text-shadow:0 0 8px gold;
+}
+
+#easy{
+    text-align:center;
+    margin-bottom:15px;
+    color:gold;
+    letter-spacing:2px;
+}
+
+#wrk{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+.courseMenuCard{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    min-height:130px;
+    padding:20px;
+
+    background:linear-gradient(135deg,#7fd3ff,#3b9dff);
+    color:white;
+
+    border:2px solid white;
+    border-radius:18px;
+
+    box-shadow:
+        0 0 12px gold,
+        0 8px 18px rgba(0,0,0,.25);
+
+    text-align:center;
+    font-size:1.4em;
+    font-weight:bold;
+    letter-spacing:1px;
+
+    cursor:pointer;
+    transition:.3s ease;
+}
+
+.courseCard{
+    width:90%;
+    margin:25px auto;
+    padding:20px;
+
+    background:linear-gradient(180deg,#b7e8ff,#73bdf8);
+
+    border-radius:25px;
+
+    border:4px solid white;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.25);
+}
+
+.course{
+    width:100%;
+
+    background:#1565c0;
+
+    color:white;
+
+    padding:15px;
+
+    border-radius:15px;
+
+    text-align:center;
+
+    font-size:28px;
+
+    margin:0 0 10px;
+}
+
+.incharge{
+    text-align:center;
+
+    color:#fff;
+
+    font-size:18px;
+
+    margin-bottom:20px;
+}
+
+.marks{
+    width:70px;
+    height:40px;
+    background:gold;
+    color:black;
+    border:2px solid white;
+    border-radius:8px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-weight:bold;
+    box-shadow:0 0 8px gold;
+}
+
+#ann{
+    margin-top:20px;
+    padding:10px;
+    text-align:center;
+    background:#1976d2;
+    border:2px solid white;
+    border-radius:8px;
+    box-shadow:0 0 10px gold;
+}
+
+.resultCard{
+    width:340px;
+    background:#fff;
+    border:2px solid #0d6efd;
+    border-radius:15px;
+    padding:20px;
+    box-shadow:0 8px 20px rgba(0,0,0,.2);
+}
+
+.courseName{
+    text-align:center;
+    color:#0d6efd;
+    margin-bottom:20px;
+}
+
+.cardBody{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:20px;
+}
+
+.markBox{
+    width:90px;
+    height:90px;
+    border:2px solid #0d6efd;
+    border-radius:12px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    background:#f8fbff;
+}
+
+.marksInput{
+    width:60px;
+    border:none;
+    outline:none;
+    background:transparent;
+    text-align:center;
+    font-size:30px;
+    font-weight:bold;
+    color:#0d6efd;
+}
+
+.marksInput::-webkit-inner-spin-button,
+.marksInput::-webkit-outer-spin-button{
+    -webkit-appearance:none;
+    margin:0;
+}
+
+.markBox span{
+    font-size:14px;
+    color:#555;
+}
+
+.gradeInfo{
+    flex:1;
+    margin-left:20px;
+}
+
+.grade{
+    color:green;
+    margin-bottom:8px;
+    min-height:28px;
+}
+
+.remark{
+    color:#666;
+    min-height:20px;
+}
+
+.updateBtn{
+    width:100%;
+    padding:12px;
+    border:none;
+    border-radius:10px;
+    background:#0d6efd;
+    color:#fff;
+    font-size:16px;
+    font-weight:bold;
+    cursor:pointer;
+    box-shadow:0 5px 12px rgba(13,110,253,.3);
+}
+
+.updateBtn:hover{
+    background:#0b5ed7;
+}
+#courseCards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+    padding:25px;
+    min-height:300px;
+    margin:20px;
+}
+
+
+.courseCard h3{
+    margin:0;
+    text-shadow:0 0 8px rgba(0,0,0,.35);
+}
+
+.courseCard:hover{
+    transform:translateY(-6px) scale(1.03);
+    box-shadow:
+        0 0 25px gold,
+        0 12px 25px rgba(0,0,0,.35);
+}
+
+.courseCard:active{
+    transform:scale(.97);
+}
+
+/* LOGIN CONTAINER */
+#loginPortal{
+    display:grid;
+    place-items:center;
+    width:100%;
+    min-height:100vh;
+    padding:20px;
+    box-sizing:border-box;
+    animation:fadeIn .5s ease;
+}
+
+/* LOGIN CARD */
+.loginCard{
+    width:100%;
+    max-width:380px;
+    background:#fff;
+    border:1px solid rgba(0,0,0,.08);
+    border-radius:22px;
+    padding:28px 24px;
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+    box-shadow:
+        0 20px 45px rgba(0,0,0,.12),
+        0 8px 18px rgba(0,0,0,.08);
+    animation:slideUp .6s ease;
+}
+
+/* TITLE */
+.loginTitle{
+    text-align:center;
+    font-size:28px;
+    font-weight:700;
+    color:#1f2937;
+    letter-spacing:1px;
+    margin-bottom:8px;
+}
+
+/* INPUTS */
+.loginInput{
+    width:100%;
+    height:56px;
+    padding:0 18px;
+    border:2px solid #d7dce5;
+    border-radius:14px;
+    background:#f8fafc;
+    color:#1f2937;
+    font-size:16px;
+    outline:none;
+    box-sizing:border-box;
+    transition:all .35s ease;
+}
+
+/* PLACEHOLDER */
+.loginInput::placeholder{
+    color:#94a3b8;
+    font-size:15px;
+    letter-spacing:.8px;
+    transition:.3s;
+}
+
+/* INPUT HOVER */
+.loginInput:hover{
+    border-color:#60a5fa;
+    background:#ffffff;
+}
+
+/* INPUT FOCUS */
+.loginInput:focus{
+    border-color:#2563eb;
+    background:#fff;
+    box-shadow:0 0 0 5px rgba(37,99,235,.18);
+    transform:translateY(-2px);
+}
+
+.loginInput:focus::placeholder{
+    color:#2563eb;
+}
+
+/* LOGIN BUTTON */
+.loginBtn{
+    width:100%;
+    height:56px;
+    border:none;
+    border-radius:14px;
+    background:linear-gradient(135deg,#2563eb,#1d4ed8);
+    color:#fff;
+    font-size:17px;
+    font-weight:600;
+    cursor:pointer;
+    transition:all .3s ease;
+    box-shadow:0 10px 20px rgba(37,99,235,.35);
+}
+
+/* BUTTON HOVER */
+.loginBtn:hover{
+    transform:translateY(-3px);
+    box-shadow:0 16px 30px rgba(37,99,235,.45);
+}
+
+/* BUTTON CLICK */
+.loginBtn:active{
+    transform:scale(.97);
+}
+
+@keyframes fadeIn{
+    from{opacity:0;}
+    to{opacity:1;}
+}
+
+@keyframes slideUp{
+    from{
+        opacity:0;
+        transform:translateY(35px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+@media(max-width:480px){
+
+    #loginPortal{
+        padding:16px;
+    }
+
+    .loginCard{
+        padding:22px 18px;
+        border-radius:18px;
+    }
+
+    .loginTitle{
+        font-size:24px;
+    }
+
+    .loginInput,
+    .loginBtn{
+        height:52px;
+        font-size:15px;
+    }
+}
+#courseavai{
+    width:95%;
+    margin:20px auto;
+}
+
+#coursename{
+    color:#FFD700;
+    text-align:center;
+    font-size:2rem;
+    margin-bottom:25px;
+    text-shadow:0 0 15px gold;
+}
+
+.studentCard{
+    background:linear-gradient(135deg,#7ec8ff,#4fa7f7);
+    border:3px solid white;
+    border-radius:20px;
+    padding:20px;
+    margin:20px 0;
+    box-shadow:
+        0 0 20px rgba(255,215,0,.7),
+        0 8px 18px rgba(0,0,0,.4);
+    transition:.3s;
+}
+
+.studentCard:hover{
+    transform:translateY(-5px) scale(1.02);
+    box-shadow:
+        0 0 30px gold,
+        0 10px 25px rgba(0,0,0,.5);
+}
+
+.stuname{
+    color:white;
+    font-size:1.7rem;
+    text-align:center;
+    margin-bottom:20px;
+    text-shadow:2px 2px 6px black;
+}
+
+.boxinput{
+    width:90px;
+    padding:10px;
+    font-size:1.1rem;
+    text-align:center;
+    border:2px solid gold;
+    border-radius:10px;
+    outline:none;
+    font-weight:bold;
+}
+
+.boxinput:focus{
+    box-shadow:0 0 12px gold;
+}
+
+.updateMarks{
+    padding:10px 22px;
+    margin-left:10px;
+    background:#FFD700;
+    color:#111;
+    border:none;
+    border-radius:10px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.updateMarks:hover{
+    background:#ffb300;
+    transform:scale(1.05);
+}
+
+.position,
+.gradein123,
+.gradeinAB{
+    background:rgba(255,255,255,.15);
+    color:white;
+    padding:12px;
+    border-left:5px solid gold;
+    border-radius:10px;
+    margin-top:15px;
+    font-weight:bold;
+    text-shadow:1px 1px 3px black;
+}
+
+.position::before{
+    content:"🏆 ";
+}
+
+.gradein123::before{
+    content:"📊 ";
+}
+
+.gradeinAB::before{
+    content:"🎓 ";
+}
+
+.resultSummary{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:15px;
+    margin-bottom:20px;
+}
+
+/* ---------- FLOAT ANIMATION ---------- */
+
+@keyframes floating{
+    0%{
+        transform:translateY(0);
+    }
+    50%{
+        transform:translateY(-8px);
+    }
+    100%{
+        transform:translateY(0);
+    }
+}
+
+/* ---------- APPEAR ANIMATION ---------- */
+
+@keyframes cardAppear{
+    from{
+        opacity:0;
+        transform:translateY(40px) scale(.9);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0) scale(1);
+    }
+}
+
+/* ---------- CARDS ---------- */
+
+.summaryBox,
+.positionBadge{
+    position:relative;
+    overflow:hidden;
+
+    height:140px;
+    border-radius:18px;
+    background:white;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.18);
+
+    transition:.35s;
+
+    animation:
+        cardAppear .7s ease,
+        floating 4s ease-in-out infinite;
+}
+
+/* Different floating times */
+
+.marksBox{
+    animation-delay:0s;
+}
+
+.gradeNumberBox{
+    animation-delay:.5s;
+}
+
+.gradeLetterBox{
+    animation-delay:1s;
+}
+
+.positionBadge{
+    animation-delay:1.5s;
+}
+
+/* ---------- HOVER ---------- */
+
+.summaryBox:hover,
+.positionBadge:hover{
+    transform:translateY(-12px) scale(1.05);
+    box-shadow:
+        0 0 20px gold,
+        0 18px 35px rgba(0,0,0,.25);
+}
+
+/* ---------- TOP BAR ---------- */
+
+.summaryBox::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:7px;
+}
+
+.marksBox::before{
+    background:#2196f3;
+}
+
+.gradeNumberBox::before{
+    background:#43a047;
+}
+
+.gradeLetterBox::before{
+    background:#fb8c00;
+}
+
+.positionBadge::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:7px;
+    background:#FFD700;
+}
+
+/* ---------- LABEL ---------- */
+
+.summaryBox p{
+    margin:0;
+    font-size:14px;
+    color:#666;
+    letter-spacing:2px;
+    font-weight:bold;
+}
+
+/* ---------- VALUE ANIMATION ---------- */
+
+@keyframes pulse{
+    0%,100%{
+        transform:scale(1);
+    }
+    50%{
+        transform:scale(1.08);
+    }
+}
+
+.marks,
+.granumbers,
+.graABC,
+.ovaral{
+    animation:pulse 2s infinite;
+}
+
+/* ---------- TROPHY ---------- */
+
+.positionBadge span{
+    font-size:42px;
+    animation:trophyGlow 2s ease-in-out infinite alternate;
+}
+
+@keyframes trophyGlow{
+    from{
+        transform:rotate(-8deg);
+        text-shadow:0 0 5px gold;
+    }
+    to{
+        transform:rotate(8deg);
+        text-shadow:
+            0 0 10px gold,
+            0 0 20px gold;
+    }
+}
+
+
+
+/* Marks */
+.marks{
+    color:#000 !important;
+    font-size:2em !important;
+    font-weight:900;
+    text-shadow:none;
+}
+
+/* Grade Number */
+.granumbers{
+    color:#000 !important;
+    font-size:2em !important;
+    font-weight:900;
+    text-shadow:none;
+}
+
+/* Grade Letter */
+.graABC{
+    color:#000 !important;
+    font-size:2em !important;
+    font-weight:900;
+    text-shadow:none;
+}
+
+/* Position */
+.ovaral{
+    color:#000 !important;
+    font-size:2em !important;
+    font-weight:900;
+    text-shadow:none;
+}
+
+.lecback{
+    display:block;
+    width:170px;
+    height:50px;
+    margin:25px auto;
+
+    background:linear-gradient(135deg,#1565c0,#42a5f5);
+    color:white;
+
+    border:2px solid white;
+    border-radius:12px;
+
+    font-size:17px;
+    font-weight:bold;
+    letter-spacing:1px;
+
+    cursor:pointer;
+
+    box-shadow:
+        0 0 12px gold,
+        0 8px 18px rgba(0,0,0,.25);
+
+    transition:all .3s ease;
+}
+
+.lecback:hover{
+    transform:translateY(-4px);
+    background:linear-gradient(135deg,#0d47a1,#1976d2);
+
+    box-shadow:
+        0 0 20px gold,
+        0 12px 25px rgba(0,0,0,.35);
+}
+
+.lecback:active{
+    transform:scale(.96);
+}
+
+.lecback::before{
+    content:"⬅ ";
+}
+
+.logmenu{
+    display:block;
+    width:170px;
+    height:50px;
+    margin:20px auto;
+
+    background:linear-gradient(135deg,#1565c0,#42a5f5);
+    color:#fff;
+
+    border:2px solid #fff;
+    border-radius:12px;
+
+    font-size:17px;
+    font-weight:bold;
+    letter-spacing:1px;
+    text-transform:uppercase;
+
+    cursor:pointer;
+
+    box-shadow:
+        0 0 15px gold,
+        0 8px 18px rgba(0,0,0,.3);
+
+    transition:all .3s ease;
+}
+
+.logmenu:hover{
+    background:linear-gradient(135deg,#0d47a1,#1976d2);
+    transform:translateY(-4px);
+
+    box-shadow:
+        0 0 22px gold,
+        0 12px 25px rgba(0,0,0,.4);
+}
+
+.logmenu:active{
+    transform:scale(.96);
+}
+
+.logmenu::before{
+    content:"⬅ ";
+    font-size:18px;
+}
+
+#baki{
+    display:block;
+    width:170px;
+    height:50px;
+    margin:20px auto;
+
+    background:linear-gradient(135deg,#1565c0,#42a5f5);
+    color:#fff;
+
+    border:2px solid #fff;
+    border-radius:12px;
+
+    font-size:17px;
+    font-weight:bold;
+    letter-spacing:1px;
+    text-transform:uppercase;
+
+    cursor:pointer;
+
+    box-shadow:
+        0 0 15px gold,
+        0 8px 18px rgba(0,0,0,.3);
+
+    transition:all .3s ease;
+}
+
+#baki::before{
+    content:"⬅ BACK";
+}
+
+#baki:hover{
+    background:linear-gradient(135deg,#0d47a1,#1976d2);
+    transform:translateY(-4px);
+    box-shadow:
+        0 0 22px gold,
+        0 12px 25px rgba(0,0,0,.4);
+}
+
+#baki:active{
+    transform:scale(.96);
+}
+
+
+#announce{
+    display:none;
+
+    width:95%;
+    max-width:430px;
+    min-height:95vh;
+
+    margin:auto;
+    padding:20px;
+
+    background:rgba(18,25,55,.55);
+
+    backdrop-filter:blur(12px);
+
+    border:3px solid rgba(150,220,255,.6);
+
+    border-radius:30px;
+
+    box-shadow:
+        0 0 25px rgba(80,180,255,.35);
+
+    position:relative;
+}
+#black{
+
+    width:82%;
+    height:75px;
+
+    border:none;
+    outline:none;
+
+    border-radius:18px;
+
+    background:linear-gradient(
+        180deg,
+        #10182d,
+        #27375d
+    );
+
+    color:white;
+
+    padding:20px;
+
+    font-size:20px;
+
+    box-shadow:
+        inset 0 0 15px black,
+        0 0 15px rgba(120,180,255,.5);
+}
+#annou{
+
+    position:absolute;
+
+    top:160px;      /* just below the input */
+    right:30px;
+
+    width:70px;
+    height:70px;
+
+    border:none;
+    border-radius:50%;
+
+    background:linear-gradient(
+        135deg,
+        #00c6ff,
+        #0072ff
+    );
+
+    color:white;
+    font-size:42px;
+    font-weight:bold;
+
+    box-shadow:
+        0 0 20px #00bfff,
+        0 0 35px #8a2be2;
+
+    transition:.3s;
+}
+
+#annou:hover{
+    transform:scale(1.08);
+}
+
+#annou:active{
+    transform:scale(.95);
+}
+.courseChoice{
+
+    margin-top:18px;
+
+    padding:18px;
+
+    text-align:center;
+
+    color:white;
+
+    font-size:20px;
+
+    font-weight:bold;
+
+    border-radius:18px;
+
+    border:2px solid rgba(255,255,255,.25);
+
+    background:linear-gradient(
+        135deg,
+        #2148ff,
+        #6a5cff,
+        #8f5cff
+    );
+
+    box-shadow:
+        0 0 15px rgba(120,120,255,.4);
+
+    transition:.3s;
+}
+
+.courseChoice:active{
+
+    transform:scale(.97);
+
+}
+#GBack{
+
+    width:180px;
+    height:55px;
+
+    margin:40px auto 0;
+
+    display:block;
+
+    border:none;
+
+    border-radius:18px;
+
+    background:linear-gradient(
+        135deg,
+        #4b6cff,
+        #7d5fff
+    );
+
+    color:white;
+
+    font-size:18px;
+    font-weight:bold;
+
+    box-shadow:
+        0 0 18px rgba(120,120,255,.6);
+}
+
+
+.deleteBtn{
+    background:#e53935;
+    color:white;
+    border:none;
+    padding:8px 14px;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:14px;
+    font-weight:bold;
+    margin-top:10px;
+    transition:0.3s;
+}
+
+.deleteBtn:hover{
+    background:#c62828;
+    transform:scale(1.05);
+}
+
+.deleteBtn:active{
+    transform:scale(0.95);
+}
+
+.deleteBtn{
+    display:block;
+    width:120px;
+    height:45px;
+    background:red;
+    color:white;
+    font-size:18px;
+    border:none;
+    margin-top:10px;
+}
+.note p{
+    color:white;
+    font-size:2em;
+}
+
+.note h4{
+    color:white;
+}
+
+.note small{
+    color:#ddd;
+}
+
+
+footer{
+    width:90%;
+    margin:40px auto;
+    padding:18px;
+    text-align:center;
+
+    background:rgba(10,20,50,.45);
+    backdrop-filter:blur(10px);
+
+    border:2px solid #00a2ff;
+    border-radius:15px;
+
+    box-shadow:
+        0 0 10px #00a2ff,
+        inset 0 0 10px rgba(0,162,255,.3);
+
+    overflow:hidden;
+    position:relative;
+}
+
+footer::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:-100%;
+    width:100%;
+    height:100%;
+    background:linear-gradient(
+        90deg,
+        transparent,
+        rgba(255,255,255,.4),
+        transparent
+    );
+    animation:shine 4s linear infinite;
+}
+
+.copyright{
+    color:#ffd700;
+    font-size:18px;
+    font-weight:bold;
+    text-shadow:
+        0 0 8px #ffd700,
+        0 0 15px #ffd700;
+    animation:float 2.5s ease-in-out infinite;
+}
+
+@keyframes shine{
+    100%{
+        left:100%;
+    }
+}
+
+@keyframes float{
+    0%,100%{
+        transform:translateY(0);
+    }
+    50%{
+        transform:translateY(-5px);
+    }
+}

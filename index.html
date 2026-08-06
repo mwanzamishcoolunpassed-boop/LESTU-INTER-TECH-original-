@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>LESTU INTER-TECH</h1>
+
+    <div id="name" onclick="goo()">
+
+        <h1>EVELYN HONE</h1>
+
+    </div>
+
+    <div id="mishcool" style="display:none;">
+
+        <div class="members">
+
+            <h2>LECTURERS</h2>
+
+            <input
+                type="password"
+                id="lecturesPassword"
+                class="lec"
+                inputmode="numeric"
+                maxlength="6"
+                placeholder="Enter lecturers code"
+                oninput="this.value=this.value.replace(/[^0-9]/g,'')">
+
+            <button onclick="lectureslogin()">
+                ENTER
+            </button>
+
+        </div>
+
+        <br>
+
+        <div class="members">
+
+            <h2>STUDENTS</h2>
+
+            <input
+                type="password"
+                id="studentsPassword"
+                class="lec"
+                inputmode="numeric"
+                maxlength="6"
+                placeholder="Enter students code"
+                oninput="this.value=this.value.replace(/[^0-9]/g,'')">
+
+            <button onclick="studentsLogin()">
+                ENTER
+            </button>
+
+        </div>
+
+        <br>
+
+        <button id="go" onclick="black()">
+            BACK
+        </button>
+
+    </div>
+
+<!-- ========================= -->
+<!-- LECTURER OPTIONS -->
+<!-- ========================= -->
+
+<div id="buttons" class="buttons" style="display:none;">
+
+    <p id="note"></p>
+
+    <button class="reg" onclick="login()">
+        LOGIN
+    </button>
+
+    <button class="reg" onclick="signup()">
+        SIGN UP
+    </button>
+
+</div>
+
+
+
+<div id="loggin" style="display:none;">
+
+    <input
+        type="text"
+        id="first"
+        placeholder="FIRST NAME"
+        oninput="this.value=this.value.toUpperCase().replace(/[^A-Z]/g,'')">
+
+    <input
+        type="text"
+        id="last"
+        placeholder="LAST NAME"
+        oninput="this.value=this.value.toUpperCase().replace(/[^A-Z]/g,'')">
+
+    <input
+        type="password"
+        id="pass"
+        placeholder="PASSWORD">
+
+    <button id="enter" onclick="enter()">
+        ENTER
+    </button>
+
+    <button class="lecback" onclick="lecback()">
+        BACK
+    </button>
+
+</div>
+
+
+
+<div id="signup" style="display:none;">
+
+    <input
+        type="text"
+        id="firstName"
+        placeholder="FIRST NAME"
+        oninput="this.value=this.value.toUpperCase().replace(/[^A-Z]/g,'')">
+
+    <input
+        type="text"
+        id="lastName"
+        placeholder="LAST NAME"
+        oninput="this.value=this.value.toUpperCase().replace(/[^A-Z]/g,'')">
+
+    <input
+        type="password"
+        id="password"
+        placeholder="PASSWORD">
+
+    <div class="course-selection">
+
+        <select id="course1">
+            <option selected disabled>Course 1</option>
+            <option>Computer Fundamentals</option>
+            <option>Programming Principles</option>
+            <option>Mathematics for Computing</option>
+            <option>Communication Skills</option>
+            <option>Business Studies</option>
+            <option>Information Technology Fundamentals</option>
+        </select>
+
+        <select id="course2">
+            <option selected disabled>Course 2</option>
+            <option>Object-Oriented Programming</option>
+            <option>Database Systems</option>
+            <option>Computer Hardware & Maintenance</option>
+            <option>Systems Analysis and Design</option>
+            <option>Web Development</option>
+            <option>Entrepreneurship</option>
+        </select>
+
+        <select id="course3">
+            <option selected disabled>Course 3</option>
+            <option>Data Structures</option>
+            <option>Networking</option>
+            <option>Operating Systems</option>
+            <option>Software Engineering</option>
+            <option>Information Systems</option>
+            <option>Advanced Database Systems</option>
+            <option>Internet Technologies</option>
+            <option>Computer Security</option>
+            <option>Project Management</option>
+        </select>
+
+    </div>
+
+    <button id="submit" onclick="submit()">
+        SUBMIT
+    </button>
+
+    <button class="lecback" onclick="lecback()">
+        BACK
+    </button>
+
+</div>
+
+
+<!-- ========================= -->
+<!-- LECTURER DASHBOARD -->
+<!-- ========================= -->
+
+<div id="lecture" class="grid" style="display:none;">
+
+    <h1 id="lecfullname" class="lectures"></h1>
+
+    <div
+        id="announcements"
+        class="lectures"
+        onclick="openAnnouncements()">
+
+        ANNOUNCEMENTS
+
+    </div>
+
+    <div
+        id="marks"
+        class="lectures"
+        onclick="awardMarks()">
+
+        AWARD MARKS
+
+    </div>
+
+</div>
+
+
+<!-- ========================= -->
+<!-- COURSE MENU -->
+<!-- ========================= -->
+
+<div id="courseCards" style="display:none;">
+
+</div>
+
+
+<!-- ========================= -->
+<!-- COURSE STUDENTS -->
+<!-- ========================= -->
+
+<div id="courseavai" style="display:none;">
+
+    <button
+        class="logmenu"
+        onclick="backi()">
+
+        BACK
+
+    </button>
+
+    <h1 id="coursename"></h1>
+
+    <div id="stulearn"></div>
+
+</button>
+</div>
+
+<!-- ========================= -->
+<!-- ANNOUNCEMENTS -->
+<!-- ========================= -->
+
+<div id="announce" style="display:none;">
+
+    <button
+        class="logmenu"
+        onclick="goBack()">
+
+        BACK
+
+    </button>
+
+    <h2>CREATE ANNOUNCEMENT</h2>
+
+    <textarea
+        id="black"
+        placeholder="Type your announcement here...">
+    </textarea>
+
+    <h3>Select Course</h3>
+
+    <section>
+
+        <!-- Courses loaded by annou() -->
+
+    </section>
+
+    <hr>
+
+    <h2>SENT ANNOUNCEMENTS</h2>
+
+    <div class="each">
+
+        
+
+    </div>
+
+</div>
+<!-- ========================= -->
+<!-- STUDENT PORTAL -->
+<!-- ========================= -->
+
+<div id="studentPortal" style="display:none;">
+
+    <div class="access-panel">
+
+        <h2 id="portalTitle">
+            STUDENT PORTAL
+        </h2>
+
+        <button
+            class="portal-btn"
+            onclick="openSignIn()">
+
+            SIGN IN
+
+        </button>
+
+        <button
+            class="portal-btn"
+            onclick="openSignUp()">
+
+            SIGN UP
+
+        </button>
+
+    </div>
+
+</div>
+
+
+<!-- ========================= -->
+<!-- STUDENT LOGIN -->
+<!-- ========================= -->
+
+<div id="loginPortal" style="display:none;">
+
+    <div class="loginCard">
+
+        <h2 class="loginTitle">
+            STUDENT LOGIN
+        </h2>
+
+      <input
+    id="portalFirst"
+    type="text"
+    placeholder="FIRST NAME"
+    oninput="this.value=this.value.toUpperCase().replace(/[^A-Z]/g,'')">
+
+<input
+    id="portalLast"
+    type="text"
+    placeholder="LAST NAME"
+    oninput="this.value=this.value.toUpperCase().replace(/[^A-Z]/g,'')">
+
+<input
+    id="portalPass"
+    type="password"
+    placeholder="PASSWORD">
+    
+        <button
+            class="loginBtn"
+            onclick="ignitePortal()">
+
+            LOGIN
+
+        </button>
+
+    </div>
+
+</div>
+
+
+<!-- ========================= -->
+<!-- STUDENT SIGN UP -->
+<!-- ========================= -->
+
+<div id="sup" style="display:none;">
+
+   <input
+    id="fn"
+    type="text"
+    placeholder="FIRST NAME"
+    oninput="this.value=this.value.toUpperCase().replace(/[^A-Z]/g,'')">
+
+<input
+    id="ln"
+    type="text"
+    placeholder="LAST NAME"
+    oninput="this.value=this.value.toUpperCase().replace(/[^A-Z]/g,'')">
+
+<input
+    id="pw"
+    type="password"
+    placeholder="PASSWORD">
+    <div class="cs">
+
+      <select id="c1">
+    <option selected disabled>Course 1</option>
+    <option>Computer Fundamentals</option>
+    <option>Programming Principles</option>
+    <option>Mathematics for Computing</option>
+    <option>Communication Skills</option>
+    <option>Business Studies</option>
+    <option>Information Technology Fundamentals</option>
+</select>
+
+<select id="c2">
+    <option selected disabled>Course 2</option>
+    <option>Object-Oriented Programming</option>
+    <option>Database Systems</option>
+    <option>Computer Hardware &amp; Maintenance</option>
+    <option>Systems Analysis and Design</option>
+    <option>Web Development</option>
+    <option>Entrepreneurship</option>
+</select>
+
+<select id="c3">
+    <option selected disabled>Course 3</option>
+    <option>Data Structures</option>
+    <option>Networking</option>
+    <option>Operating Systems</option>
+    <option>Software Engineering</option>
+    <option>Information Systems</option>
+    <option>Advanced Database Systems</option>
+    <option>Internet Technologies</option>
+    <option>Computer Security</option>
+    <option>Project Management</option>
+</select>
+
+<select id="c4">
+    <option selected disabled>Course 4</option>
+    <option>Computer Fundamentals</option>
+    <option>Programming Principles</option>
+    <option>Mathematics for Computing</option>
+    <option>Communication Skills</option>
+    <option>Business Studies</option>
+    <option>Information Technology Fundamentals</option>
+    <option>Object-Oriented Programming</option>
+    <option>Database Systems</option>
+    <option>Computer Hardware &amp; Maintenance</option>
+    <option>Systems Analysis and Design</option>
+    <option>Web Development</option>
+    <option>Entrepreneurship</option>
+    <option>Data Structures</option>
+    <option>Networking</option>
+    <option>Operating Systems</option>
+    <option>Software Engineering</option>
+    <option>Information Systems</option>
+    <option>Advanced Database Systems</option>
+    <option>Internet Technologies</option>
+    <option>Computer Security</option>
+    <option>Project Management</option>
+</select>
+
+<select id="c5">
+    <option selected disabled>Course 5</option>
+    <option>Computer Fundamentals</option>
+    <option>Programming Principles</option>
+    <option>Mathematics for Computing</option>
+    <option>Communication Skills</option>
+    <option>Business Studies</option>
+    <option>Information Technology Fundamentals</option>
+    <option>Object-Oriented Programming</option>
+    <option>Database Systems</option>
+    <option>Computer Hardware &amp; Maintenance</option>
+    <option>Systems Analysis and Design</option>
+    <option>Web Development</option>
+    <option>Entrepreneurship</option>
+    <option>Data Structures</option>
+    <option>Networking</option>
+    <option>Operating Systems</option>
+    <option>Software Engineering</option>
+    <option>Information Systems</option>
+    <option>Advanced Database Systems</option>
+    <option>Internet Technologies</option>
+    <option>Computer Security</option>
+    <option>Project Management</option>
+</select>
+    </div>
+
+    <button
+        id="sb"
+        onclick="regStu()">
+
+        SUBMIT
+
+    </button>
+
+</div>
+
+
+<!-- ========================= -->
+<!-- STUDENT DASHBOARD -->
+<!-- ========================= -->
+
+<div id="stuName" style="display:none;">
+
+    <h1 id="stN"></h1>
+
+    <h2 id="easy">
+        MY COURSES
+    </h2>
+
+    <div id="wrk">
+
+        <!-- Generated by JavaScript -->
+
+    </div>
+
+</div>
+
+<footer>
+  <p>&copy; 2026 Henry Pambwe Kingstone the Great. All Rights Reserved.</p>
+</footer>
+
+
+    <script src="main.js"></script>
+</body>
+</html>
